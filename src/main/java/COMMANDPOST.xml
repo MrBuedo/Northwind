@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<root>
+    Este documento solo sirve para saber por donde voy y qué pasos quedan.
+    
+    <NextStep>
+        Conseguir cargar un AL con los datos de la tabla Products directamente
+        desde la DB y pasarle ese AL a la tabla de productos para que los muestre.
+    </NextStep>
+    
+    <Plan>
+        
+    </Plan>
+    
+    <PasosEjecutados>      
+            <Paso>
+                22.11.23  10:10h  En clase de DI
+                He conseguido crear una tabla en la pantalla que muestra un AL
+                de products con los titulos de las columnas.
+            </Paso>
+    </PasosEjecutados>
+    
+</root>
+
