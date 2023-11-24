@@ -1,4 +1,7 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package DAO;
 
 import java.sql.Connection;
@@ -7,37 +10,30 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class AccesoDatos {
-	
-    private Connection con;
+/**
+ *
+ * @author alu
+ */
+public class ConfigCon {
+    //private Connection con;
     
-    public AccesoDatos() {
-    	this.con =this.Conectar();
-    }
-    
-    public Connection getCon() {
-		return con;
-	}
-
-    public void setCon(Connection con) {
-            this.con = con;
-    }
-
-	/** >>>Conectar <<<
+    /** >>>Conectar <<<
      * returns a Connection object
      */
     
     public Connection Conectar(){
         Connection con = null;
         try{
-            Class.forName("org.sqlite.JDBC");        	
+            Class.forName("org.sqlite.JDBC");
+        	
         	// ESTABLECER LA CONEXIÓN con la base de datos
-            con = DriverManager.getConnection("jdbc:sqlite:D:\\Documentos\\NetBeansProjects\\Northwind\\DB\\northwind.db");            
+            con = DriverManager.getConnection("jdbc:sqlite:\\DB\\northwind.db");
+            
         } catch (SQLException | ClassNotFoundException ex) {
             System.out.println("Error en la conexión de la base de datos");
             ex.printStackTrace();  
         }
-        return con;
+           return con;
     }
     
      /** >>>Desconectar <<<
@@ -53,5 +49,6 @@ public class AccesoDatos {
             }
         }       
     }
+    
     
 }
